@@ -1,5 +1,2 @@
-const url = new URL(window.location.href);
-if (url.pathname.endsWith('/') && url.pathname !== '/') {
-  url.pathname = url.pathname.substring(0, url.pathname.length - 1);
-  window.history.replaceState(null, undefined, url.toString());
-}
+/*! For license information please see fix-location.js.LICENSE.txt */
+const url=new URL(window.location.href);url.pathname.endsWith("/")&&"/"!==url.pathname&&(url.pathname=url.pathname.substring(0,url.pathname.length-1),window.history.replaceState(null,void 0,url.toString()));
